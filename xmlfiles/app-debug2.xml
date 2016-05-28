@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.example.blank.myapplication</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.example.blank.myapplication.MainActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.example.blank.myapplication.MainActivity: void onActivityResult(int,int,android.content.Intent)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>WRITE_EXTERNAL_STORAGE</permission>
+        <permission>INTERNET</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>INTERNET</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/bundle/app-debug2.apk</apkFile>
+    <name>app-debug2</name>
+</application>

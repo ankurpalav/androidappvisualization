@@ -1,0 +1,11 @@
+1. tools used: COVERT tool, beautiful soup & D3 analysis tool
+
+2.steps for getting visualization:
+a. Run the COVERT tool on the 20 apk files. This will give you the corresponding xml files for each application & the other analysis results.
+b. Run the testparser.py on these 20 xml files one at a time. It will extract the components,permissions,intents and other resources for each app and store it in a json format. Thus you will have corresponding 20 json files.
+c. Run the compare.py file on these 20 json files. It will give you the interacting components and store them in another json file(compared.json)
+d. Create a folder and store inside it the index.html file(visualization file) and the D3 folder(containing D3 library).
+The visualization shows the interactions between the different components, the various permissions and the intents that each app sends. 
+The results are shown in the image files (.png) attached.
+
+Note: use chrome browser to view the visualizations

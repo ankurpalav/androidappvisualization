@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.lightbox.android.camera</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>activities.Camera</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.media.action.IMAGE_CAPTURE</actions>
+                    <actions>android.media.action.STILL_IMAGE_CAMERA</actions>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+                <filter>
+                    <actions>android.media.action.IMAGE_CAPTURE</actions>
+                    <actions>android.media.action.STILL_IMAGE_CAMERA</actions>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+                <filter>
+                    <actions>android.media.action.IMAGE_CAPTURE</actions>
+                    <actions>android.media.action.STILL_IMAGE_CAMERA</actions>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.lightbox.android.camera.activities.Settings</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.CameraButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.CameraButtonIntentReceiver</sender>
+            <component>com.lightbox.android.camera.activities.Camera</component>
+            <action>"android.intent.action.MAIN"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <categories>"android.intent.category.LAUNCHER"</categories>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>kuj6gum6ad9ap5uaos14l72mc3</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>ijvok2ht4h0rglvh75cht8tki5</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void gotoGallery(android.app.Activity,int,int)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>crlo7d44v9gh0obj1c9j6d61oh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.action.CROP"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>s2lhhjl0omf449d6im84codaqe</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>uadb009ieet6be1g4tf93tp7j</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component>com.lightbox.android.camera.activities.Settings</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>i0or1fvjvplqqvfvas8ptn1cir</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>tob40dt04kbo43asfduno45trv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>3deqi386a3fou1apq6cg99reau</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera$ImageCapture: int storeImage(byte[],android.hardware.Camera)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.NEW_PICTURE"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>idigv458nlfd1icg7cq3fsa36s</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.action.CROP"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>91rgjg632dr5bo8kepav5tq03l</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>9ang1qponvqvkmq7lpm7pamose</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>b7pgof86s0dge3vigcqjbfpp2a</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component>com.lightbox.android.camera.activities.Settings</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>7qhlthhvf1mngntr9jgqc901h1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera$ImageCapture: int storeImage(byte[],android.hardware.Camera)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.NEW_PICTURE"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>1io1tc9liqlpdn6iajdklbi4ei</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>m0j2673votvpvbsbbisikvdgom</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>h7uo6s7ji7nddkli74m4ghhduf</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>8aqm8nl8gjv8cro3f54kmoai27</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Settings: void onResume()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Settings</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setIntent</consumerMethod>
+            <id>sf7rbrg7lp62rgsh3l9j112kjn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component>com.lightbox.android.camera.activities.Settings</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>jor06g6r8o0rrc5e2llpclqjod</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>7po99ij7fg10h1iu2m4drlv91f</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>ggd29h4qe1hqvovkaihcu1at1i</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>kjs220pio8mkamcesl7vb67afn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component>com.lightbox.android.camera.activities.Settings</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>5mebc4sjr14r0mmec34ap638su</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>bj2pciivl49lund1cr6tqfl1an</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>94dg7kvgnbfm8d44hje6mh2qc0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.CameraButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.CameraButtonIntentReceiver</sender>
+            <component>com.lightbox.android.camera.activities.Camera</component>
+            <action>"android.intent.action.MAIN"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <categories>"android.intent.category.LAUNCHER"</categories>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>l042det3drk795oiamdg3gbkmq</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Settings: void onResume()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Settings</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setIntent</consumerMethod>
+            <id>mje0f0v3rb5ks6dhlo8trv6do7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>l6i93mrfmtld25ve652igbt89q</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;("crop") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter1: int </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter2: android.content.Intent </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> staticinvoke &lt;android.preference.PreferenceManager: android.content.SharedPreferences getDefaultSharedPreferences(android.content.Context)&gt;($r1) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ComboPreferences: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r4.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;("com.lightbox.android.photos.activities.TakePhotoActivity", 0) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)&gt;("output") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>u8ghpd5827njs9v9a3c58pskgi</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>t8ia40doahbr8nje4vku4ipm9s</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void gotoGallery(android.app.Activity,int,int)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>9gf8438o6igi3hdtprob25nul</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>d8ko173vmfqtdvh5hccn5hqt4i</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>u1b1dek4tp50parvn42b02go5n</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera$ImageCapture: int storeImage(byte[],android.hardware.Camera)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.NEW_PICTURE"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>s8gahbttol1f8hrtftremrke43</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>o45ia2h6l9dchg1nb777v8em9n</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>cgdh84a6ut4lhrjd37lsbme90c</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void gotoGallery(android.app.Activity,int,int)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>73g2q8efhstfd1iu17cst3teq5</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.CameraButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.CameraButtonIntentReceiver</sender>
+            <component>com.lightbox.android.camera.activities.Camera</component>
+            <action>"android.intent.action.MAIN"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <categories>"android.intent.category.LAUNCHER"</categories>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>dv1isijr1cuqgjkm5gg37amvqi</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>hbvq62sbuer67gc0nond63jsdc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>s9q3guk72nuel5khigbgeqp3ed</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>deucf17mke24o5br8idsh2is04</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>74gk6kvnbrpv4tfb2b5354trs3</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>8dbgki54vocatdi1g3n19tfl3r</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.action.CROP"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>qff3kgon62a02mmkbd1n3rdfr4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void viewLastImage()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>8todtb55o0mvjtn5dlgmvui2jd</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void gotoGallery(android.app.Activity,int,int)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component></component>
+            <action>"android.intent.action.VIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>30rrc6tplk1m0ii8762iv4tkdv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;("crop") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter1: int </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter2: android.content.Intent </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> staticinvoke &lt;android.preference.PreferenceManager: android.content.SharedPreferences getDefaultSharedPreferences(android.content.Context)&gt;($r1) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ComboPreferences: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r4.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;("com.lightbox.android.photos.activities.TakePhotoActivity", 0) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)&gt;("output") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>au7oeogsh8r9m7l1ktjhjronj1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Settings: void onResume()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Settings</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setIntent</consumerMethod>
+            <id>suf0ftp9ibpr1n3vtnk6fpb6ft</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void startGallery()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.cooliris.media.action.REVIEW"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>eiamn66ehq7cq49glkdnr5nffj</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Settings: void onResume()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Settings</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setIntent</consumerMethod>
+            <id>pkhpa14glvh4j3efp5c6uj8mbl</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.action.CROP"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>3vvh3lbkiq75rv82nf4m0947lo</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;("crop") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter1: int </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter2: android.content.Intent </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> staticinvoke &lt;android.preference.PreferenceManager: android.content.SharedPreferences getDefaultSharedPreferences(android.content.Context)&gt;($r1) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ComboPreferences: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r4.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;("com.lightbox.android.photos.activities.TakePhotoActivity", 0) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)&gt;("output") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>5nbc482f2raaq4di6sbjf5v9i4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>plqd1qqp6pfbnq3um2e3j7avle</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doAttach()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>dp9sup8m3kjat6l25bo55jvuau</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>ouaj89d8dv0647pe7862pqd8ae</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.CameraButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.CameraButtonIntentReceiver</sender>
+            <component>com.lightbox.android.camera.activities.Camera</component>
+            <action>"android.intent.action.MAIN"</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <categories>"android.intent.category.LAUNCHER"</categories>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>6q2m7mu202p5jnvru9eh6a9tj6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera$ImageCapture: int storeImage(byte[],android.hardware.Camera)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action>"com.android.camera.NEW_PICTURE"</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>sendBroadcast</consumerMethod>
+            <id>29j56iqlqfro6j4r0nuhb6v98f</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.MenuHelper: void startCameraActivity(android.app.Activity,java.lang.String,java.lang.String)</calledAt>
+            <sender>com.lightbox.android.camera.MenuHelper</sender>
+            <component>com.lightbox.android.camera.</component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>nr5u8bn83petv8an56mb3jmnl1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;("crop") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.Intent getIntent()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter1: int </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isImageCaptureIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> @parameter2: android.content.Intent </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> staticinvoke &lt;android.preference.PreferenceManager: android.content.SharedPreferences getDefaultSharedPreferences(android.content.Context)&gt;($r1) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ComboPreferences: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r4.&lt;android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)&gt;("com.lightbox.android.photos.activities.TakePhotoActivity", 0) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: boolean isLightboxIntent()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;($i1, $r3) on line 1578 </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void onActivityResult(int,int,android.content.Intent)</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)&gt;("output") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setupCaptureParams()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>BUNDLE</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>uudts9cum0q914lv0k4auggk1l</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</calledAt>
+            <sender>com.lightbox.android.camera.activities.Camera</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r6.&lt;android.view.animation.Transformation: float getAlpha()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.ui.GLRootView: void &lt;init&gt;(android.content.Context,android.util.AttributeSet)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getSceneMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427339) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.view.View findViewById(int)&gt;(2131427338) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void initControlButtons()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void ensureCameraDevice()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r1.&lt;android.hardware.Camera$Parameters: int getInt(java.lang.String)&gt;("max-zoom") </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: int getMaxZoom()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: android.content.ContentResolver getContentResolver()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void keepMediaProviderInstance()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r12.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r9.&lt;android.content.res.Resources: int getDimensionPixelSize(int)&gt;(2131165184) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.OnScreenHint: void &lt;init&gt;(android.content.Context)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r2.&lt;android.hardware.Camera$Parameters: java.lang.String getFocusMode()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> @parameter0: android.view.SurfaceHolder </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void surfaceChanged(android.view.SurfaceHolder,int,int,int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r0.&lt;com.lightbox.android.camera.activities.Camera: java.lang.String getString(int)&gt;(2131230748) </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void updateCameraParametersPreference()</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>UNDEFINED</sourceDomain>
+                </Flow>
+                <Flow>
+                    <sink>&lt;com.lightbox.android.camera.activities.Camera: void setResult(int,android.content.Intent)&gt;(0, $r1) </sink>
+                    <sinkCalledAt>com.lightbox.android.camera.activities.Camera: void doCancel()</sinkCalledAt>
+                    <source> virtualinvoke $r3.&lt;android.hardware.Camera: android.hardware.Camera$Parameters getParameters()&gt;() </source>
+                    <sourceCalledAt>com.lightbox.android.camera.activities.Camera: void setCameraParameters(int)</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>setResult</consumerMethod>
+            <id>6q4mkc7mu3sdcop5mjh73knmpj</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>insert</dbMethod>
+            <calledAt>com.lightbox.android.camera.ImageManager: android.net.Uri addImage(android.content.ContentResolver,java.lang.String,long,android.location.Location,java.lang.String,java.lang.String,android.graphics.Bitmap,byte[],int[])</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.lightbox.android.camera.ImageManager: android.database.Cursor query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>ACCESS_COARSE_LOCATION</permission>
+        <permission>WRITE_EXTERNAL_STORAGE</permission>
+        <permission>WAKE_LOCK</permission>
+        <permission>CAMERA</permission>
+        <permission>ACCESS_FINE_LOCATION</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions>
+        <permission>ACCESS_FINE_LOCATION</permission>
+        <permission>ACCESS_COARSE_LOCATION</permission>
+        <permission>CAMERA</permission>
+    </actuallyUsesPermissions>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/bundle/com.lightbox.android.camera_2.apk</apkFile>
+    <name>com_lightbox_android_camera_2</name>
+</application>

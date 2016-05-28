@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>info.percentagecalculator.v1</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>info.percentagecalculator.v1.PercentageCalculator</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.google.android.gms.ads.AdActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders/>
+    <usesPermissions>
+        <permission>ACCESS_NETWORK_STATE</permission>
+        <permission>INTERNET</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/bundle/Percentage Calculator v1.apk</apkFile>
+    <name>Percentage Calculator v1</name>
+</application>
